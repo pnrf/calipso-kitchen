@@ -20,7 +20,7 @@
 }
 
 .calc {
-
+  margin: 0;
 }
 
 .calc__wrapper {
@@ -91,7 +91,7 @@
 
 .calc__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -99,6 +99,11 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 100%;
+}
+
+.calc__progress-bar_disabled {
+  display: none;
 }
 
 .calc__progress-bar-index {
@@ -149,6 +154,10 @@
   background-color: transparent;
   border: none;
   color: #333;
+}
+
+.calc__button-prev_disabled {
+  display: none;
 }
 
 .calc__button-next {
